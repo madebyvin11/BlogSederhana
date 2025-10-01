@@ -1,0 +1,43 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+     background-image:linear-gradient(to right, #ffe6cc, #fff9f0);
+}
+
+main{
+   height: 90vh;
+   background-image: url('https://images.bloombergtechnoz.com/data/2024/03/image-20240328115121.jpg');
+   background-size: cover;
+   background-position: center;
+}
+
+#kontak {
+  height: auto !important;
+  padding-top: 16px;
+  padding-bottom: 64px; 
+}
+
+#kontak + footer {
+  margin-top: 16px;
+}
+
+#kontak img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767.98px) {
+  #kontak .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #kontak .col-lg-4 {
+    margin-bottom: 20px;
+  }
+}

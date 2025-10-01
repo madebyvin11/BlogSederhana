@@ -1,0 +1,42 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+     background-image:linear-gradient(to right, #ffe6cc, #fff9f0);
+}
+
+.our-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.our-team img {
+    border-radius: 8px;
+    width: 150px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .our-team {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 5px;
+    }
+
+    .our-team img {
+        flex: 0 0 calc(33.333% - 10px);
+        max-width: calc(33.333% - 10px);
+        height: auto;
+    }
+}
+
